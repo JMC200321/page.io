@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:  'Libre Baskerville', serif;
+    background-color:black;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn:hover{
+    background-color: lightpink;
+    border: lightpink;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    padding: 50px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 30px;
+    color:white;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 15px;
+    color:white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    background-color: #e2a1f2;
+    transition: .5s;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+  width: 10;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+span{
+    align-items: center;
+    color: lightpink;
+    font-size: 30px;
+}
+
+h2{
+    color: lightgreen;
+    font-size: 50px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.general{
+    padding: 10px 0;
+    display: flex;
+}
+
+.general-img{ 
+    width: 50%;
+    text-align: center;
+}
+
+.general-img img{
+    width: 300px;
+    margin: 100px 150px;
+}
+
+.general-txt{
+    padding: 100px 0;
+    width: 80%;
+}
+
+.general-txt p{
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
+}
+
+
+.mision-img{
+    width: 50%;
+    text-align: center;
+}
+
+.mision-img img{
+    width: 400px;
+    margin: 30px 0;
+}
+
+.vision-img{
+    width: 50%;
+    text-align: center;
+}
+
+.vision-img img{
+    width: 400px;
+    margin: 30px 0;
+}
+
+.solucion-img{
+    width: 50%;
+    text-align: center;
+}
+
+footer{
+    font-family:'Roboto', sans-serif;
+    background-color:  #1f1d1d;
+    text-align:justify;
+    color: aliceblue;
+} 
+
+@media (max-width: 991px) {
+
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        background-color: #1F1F1F;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    
+    h2{
+        margin-bottom: 20px;
+    }
+
+    .general{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .general-img{
+        width: 50%;
+        order:2;
+    }
+
+    .general-img img{
+        width: 100%;
+    }
+
+    .general-txt{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .general-txt p{
+        margin-bottom: 25px;
+    }
+
+    .banner{
+        padding: 30px;
+    }
+
+
+   .footer{
+    padding: 30px;
+   }
+}

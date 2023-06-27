@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:  'Libre Baskerville', serif;
+    color: white;
+    background-color:black;
+}
+
+h1{
+   padding: 100px 0 0px 0;
+   font-style: unset;
+   color: lightgreen;
+   font-size: 80px;
+   text-align: center;
+   width: 100%;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    padding: 50px;
+    text-align: justify;
+}
+
+.region-img{
+   text-align: center;
+}
+
+.region-img img{
+    width: 800px;
+    margin: 10px 0;
+}
+
+.cabezeras h1{
+   margin-top: 50px;
+   color: black;
+   background-color: #e2a1f2;
+   padding: 30px 0 30px 0;
+   font-style:unset;
+   font-size: 40px;
+   text-align: center;
+   width: 100%;
+}
+.Block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin:0;
+}
+.atractivos h2{
+    color: lightpink;
+    padding: 30px 0 30px 0;
+    font-style:unset;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+.atractivos{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.atractivos img {
+    width: 250px;
+    height: 200px;
+    margin: 30px 0;
+    border-radius: 20px; 
+    justify-content: center;    
+}
+
+.atractivos p{
+    text-align: center;
+    padding: 10px;
+    font-style: oblique;
+}
+.actividades{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.actividades h1{
+   color: black;
+   background-color: #e2a1f2;
+   padding: 30px 0 30px 0;
+   font-style:unset;
+   font-size: 40px;
+   text-align: center;
+   width: 100%;
+}
+
+.actividades h2{
+    color: lightpink;
+    padding: 30px 0 30px 0;
+    font-style:unset;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.actividades img{
+    width: 250px;
+    height: 200px;
+    margin: 30px 0;
+    border-radius: 20px; 
+    justify-content: center;
+}
+
+.actividades p{
+    text-align: center;
+    padding: 10px;
+    font-style: oblique;
+}

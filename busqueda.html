@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="styleBusqueda.css"    rel="stylesheet"  >
+    <title>Static Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Reconocimiento de Voz</title>
+</head>
+<body>
+  <button id="start-button">Iniciar reconocimiento de voz</button>
+  <button id="stop-button">Detener reconocimiento de voz</button>
+  <p id="result"></p>
+
+  <script>
+    if ('webkitSpeechRecognition' in window) {
+      const recognition = new webkitSpeechRecognition();
+      recognition.continuous = true;
+      recognition.lang = 'es-ES';
+      
+
+      const resultElement = document.getElementById('result');
+
+      recognition.onresult = function(event) {
+        const result = event.results[event.resultIndex];
+        const transcript = result[0].transcript;
+        resultElement.textContent = transcript;
+      };
+
+      recognition.onerror = function(event) {
+        console.error('Error en el reconocimiento de voz: ' + event.error);
+      };
+
+      recognition.onstart = function() {
+        console.log('Reconocimiento de voz iniciado.');
+      };
+
+      recognition.onend = function() {
+        console.log('Reconocimiento de voz detenido.');
+      };
+
+      function startRecognition() {
+        recognition.start();
+      }
+
+      function stopRecognition() {
+        recognition.stop();
+      }
+
+      const startButton = document.getElementById('start-button');
+      startButton.addEventListener('click', startRecognition);
+
+      const stopButton = document.getElementById('stop-button');
+      stopButton.addEventListener('click', stopRecognition);
+    } else {
+      console.error('El navegador no admite la API de reconocimiento de voz.');
+    }
+  </script>
+</body>
+</html>
+    <body>  
+              
+        <div><h1 class="titulo">¿Qué está buscando...?‎ ‎ ‎ ‎ </h1></div>
+    <div class="buscar" >
+      <input type="text"  placeholder="Buscar" required />
+      <div class="btn">
+        <i class="fas fa-search icon"></i>
+      </div>
+    </div>
+  </body>
+</html>

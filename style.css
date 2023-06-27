@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:  'Libre Baskerville', serif;
+    background-color:black;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    font-style: oblique;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),
+    url(imagenes/fondo.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid lightgreen;
+    color: black;
+    text-decoration: none;
+    background: lightgreen;
+}
+
+.btn:hover{
+    background-color: lightpink;
+    border: lightpink;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    padding: 50px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 30px;
+    color:white;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 15px;
+    color:black;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    background-color: #e2a1f2;
+    transition: .5s;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 10;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-txt span{
+    font-size: 20px;
+    color: lightgreen;
+    font-style:normal;
+}
+
+.header-txt h1{
+    font-size: 80px;
+    line-height: 80px;
+    color: #e2a1f2;
+    font-style:normal;
+}
+
+.recomendaciones{
+    padding: 100px 0;
+    text-align: center;
+}
+
+span{
+    color: lightpink;
+    font-size: 30px;
+}
+
+h2{
+    color:#e2a1f2;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 35px;
+}
+
+.recomendaciones-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin:0;
+}
+
+.recomendacion-1{
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.recomendacion-1 img {
+    width: 300px;
+    height: 200px;
+    margin: 30px 0 10px 0;
+    border-radius: 50px;
+}
+
+.recomendacion-1 h3{
+    color:white;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: lightgreen;
+    color: black;
+}
+
+.btn-1:hover{
+    background-color: lightpink;
+    transition: .5s;
+}
+
+.general{
+    padding: 100px 0;
+    display: flex;
+}
+
+.general-img{ 
+    width: 50%;
+    text-align: center;
+}
+
+.general-img img{
+    width: 400px;
+    margin: 100px 0;
+}
+
+.general-txt{
+    width: 50%;
+}
+
+.general-txt p{
+    font-size: 18px;
+    color: white;
+}
+
+.banner{
+    padding: 150px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(lugares.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.servicio{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.servicio-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-1{
+    padding: 10px;
+}
+
+.plan-1 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.plan-1 h3{
+    color: lightgreen;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.plan-1 p{
+    font-size: 16px;
+    color:white;
+    text-align:center;
+    font-style:normal;
+}
+
+.contact {
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #1f1d1d;
+}
+.contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: wheat;
+}
+
+.datecontact {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactbox img {
+    width: 150px;
+    height: 100px;
+    margin-right: 100px;
+}
+
+.contactbox ul li {
+    margin-bottom: 10px;
+    margin-right: 10px;;
+    margin-left: 10px;
+}
+
+.contactbox i {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.contactbox i a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 14px;
+}
+
+.contactbox i a:hover {
+    color:#e2a1f2;
+}
+
+footer{
+    font-family:'Roboto', sans-serif;
+    background-color:  #1f1d1d;
+    text-align:justify;
+    color: aliceblue;
+} 
+
+@media (max-width: 991px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 160vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1F1F1F;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px;
+    }
+    .header-txt h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .recomendaciones{
+        padding: 50px;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    .recomendaciones-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .recomendacion-1{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .recomendacion-1:last-child{
+        margin-bottom: 0;
+    }
+
+    .general{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .general-img{
+        width: 100%;
+        order:2;
+    }
+
+    .general-img img{
+        width: 100%;
+    }
+
+    .general-txt{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .general-txt p{
+        margin-bottom: 25px;
+    }
+
+    .banner{
+        padding: 30px;
+    }
+
+    .servicio{
+        padding: 30px;
+   }
+   
+   .servicio-content{
+    flex-direction: column;
+   }
+
+   .plan-1{
+    padding: 25px 100px;
+   }
+
+   .footer{
+    padding: 30px;
+   }
+
+}
+
+
